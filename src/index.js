@@ -9,7 +9,6 @@ const api = require('./api');
 
 const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
-
 mongoose.Promise = global.Promise; // Node 의 네이티브 Promise 사용
 // mongodb 연결
 mongoose.connect(process.env.MONGO_URI).then(
